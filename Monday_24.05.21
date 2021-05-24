@@ -1,0 +1,21 @@
+
+1. JS basics --> Theory
+
+2. Properties of JS
+    1. Client Side Scripting Language 
+    2. Run time env. installed in browser. Dynamic HTML
+    3. JS is an interpretor based learning
+    4. Loosely typed : a variable ecan store any data type 
+    5. Object based
+    6. Purely single threaded env 
+    7. Multi-threading: asyncc and callbacks 
+
+3. VARIABLES 
+    1. Global Scope: var
+    2. Local Scope: let/const
+
+4. RULES 
+    1. Always keep your objects immuatble 
+    2. filenames: lowercase
+    3. variable/function name: camelcase 
+    
