@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+//DOM Manipulation codes
+
+<body>
+    <p id="p1">Test content</p>
+    <!-- <button onclick="changeContent()">Change Content</button> -->
+    <script>
+        document.getElementById("p1").innerText = "some updated content";
+    </script>
+    <button onclick="changeContent()">Change Content</button>
+    <script>
+        function changeContent() {
+            alert("text is changed");
+            document.getElementById("p1").innerText = "some updated content";
+        }
+    </script>
+</body>
+
+
+
+</html>

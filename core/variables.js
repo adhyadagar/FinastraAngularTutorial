@@ -18,16 +18,21 @@ for (let i = 0; i < 10; i++) {
     
 }
 
-//const : read only
-const t = "test";
-//t = "demo";
+//const : read only : only able to detect only change in ref
+// string : immutable : data changes a new ref gets created 
+const t = "test"; // mem ref = 200
+//t = "demo"; // mem ref = 300
 
+
+// object & arrays : mutable 
 const user = {
+    // key:value 
     name: "adhya",
     age: 12,
 };
 //dot notation 
 console.log(user.name);
+user.name = 'chahat' //ref remains the same 
 //bracket notation :dynamic properties 
 console.log(user["name"]);
 
