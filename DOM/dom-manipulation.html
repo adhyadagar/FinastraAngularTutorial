@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-CCompatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Test 1</p>
+    <p>Test 2</p>
+    <p>Test 3</p>
+    <script>
+        let tags = document.getElementsByTagName("p");
+        console.log("TAG NAME", tags);
+    </script>
+
+    <span class="test">TEST span</span>
+    <div class="test">Test Div</div>
+    <script>
+        tags = document.getElementsByClassName("test");
+        console.log("CLASS NAME", tags);
+    </script>
+
+    <div id="div1">Div content</div>
+    <script>
+        tags = document.getElementById("div1");
+        console.log("ID", tags);
+    </script>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <script>
+        tags = document.querySelector("ul>li");
+        console.log("Query Selector", tags);
+
+        tags = document.querySelectorAll("ul>li");
+        console.log("Query Selector All", tags);
+    </script>
+
+    <script>
+        console.log(document.title);
+        // document.body
+    </script>
+</body>

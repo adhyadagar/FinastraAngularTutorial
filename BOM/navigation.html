@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-CCompatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openWindow()">Open a new Tab</button>
+    <button onclick="redirect()">Redirect to a url</button>
+    <script>
+        const url = "https://google.com";
+
+        function openWindow() {
+            window.open(url);
+        }
+
+        function redirect() {
+            location.assign(url);
+        }
+    </script>
+</body>

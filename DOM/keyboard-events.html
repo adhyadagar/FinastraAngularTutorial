@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-CCompatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeydown="testEvent()" onkeypress="testEvent()" onkeyup="testEvent()" /> FORMAT DATA
+    <input type="text" id="securityCode" onkeyup="formatData()" /> CREDIT CARD DATA
+    <input type="text" id="creditCard" onkeydown="cardValidator()" />
+    <script>
+        function testEvent() {
+            console.log("event triggered", event);
+        }
+
+        function formatData() {
+            const tag = document.getElementById("securityCode");
+            tag.value = tag.value.toUpperCase();
+        }
+
+        function cardValidator() {
+            const keyCode = event.keyCode;
+            if (keyCode < 48 || keyCode > 57) {
+                // cancel the default behaviour
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>

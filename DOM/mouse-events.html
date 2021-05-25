@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-CCompatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- STATIC -->
+    <button id="btn1" onclick="testEvent('btn1')">Button Id</button>
+    <button id="btn2" onclick="testEvent(this)">Button this</button>
+    <!-- DYNAMIC -->
+    <button id="btn3" onclick="testEvent()">Button Event</button>
+
+    <!-- EVENTS -->
+    <button onclick="testEvent()">onclick</button>
+    <button ondblclick="testEvent()">ondblclick</button>
+    <button onmouseover="testEvent()">onmouseover</button>
+    <button onmouseout="testEvent()">onmouseout</button>
+    <button onmousemove="testEvent()">onmousemove</button>
+    <button onmouseup="testEvent()">onmouseup</button>
+    <button onmousedown="testEvent()">onmousedown</button>
+
+    <script>
+        function testEvent(btnId) {
+            // console.log("event triggered", document.getElementById(btnId));
+            // console.log("event triggered", btnId);
+            console.log("event triggered", event.target);
+        }
+    </script>
+</body>

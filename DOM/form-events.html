@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-CCompatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="testEvent()" onreset="testEvent()">
+        <input type="text" onblur="testEvent()">
+        <input type="text" onfocus="testEvent()">
+        <input type="text" onchange="testEvent()">
+        <input type="text" onselect="testEvent()">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+
+    </form>
+    <script>
+        function testEvent() {
+            event.preventDefault();
+            console.log("event triggered", event);
+        }
+    </script>
+</body>
