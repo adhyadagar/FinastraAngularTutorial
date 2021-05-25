@@ -1,0 +1,61 @@
+1. Document : HTML document 
+    document.body : apply any changes to the body tag
+    document.title : change the title dynamically 
+
+    document.getElementById : returns a single object
+    document.getElementsByTagNames : array of object 
+    doccument.getElementsByClassName : array of object 
+
+    #ccss-selectors 
+    document.querySelector  : single object 
+    document.querySelectorAll : array of objects 
+
+2. HTML: kebab - case
+   CSS : camelCase
+
+
+3. 
+
+    click: mousedown, mouseup, click 
+
+4. Keyboard 
+
+    onkeypress: esc, del, backspace 
+    onkeyup: 
+    onkeydown : 
+
+    keydown => keypress => keyup 
+
+    understand when to use each event 
+    01/01/2000
+
+5. Form 
+    -> Performing validations on form after submitting 
+    1. onsubmit 
+    2. onreset 
+
+    Field specific events 
+    1. onblur 
+    2. onfocus 
+    3. onchange 
+    4. onselect
+
+6. BOM: Browser Object Model object
+
+    1. window 
+    2. history: browser history
+    3. location : url accessibility
+    4. navigator : browser feature
+
+ASYNC PROGRAMMING (callbacks )
+
+person 1 => yes => contact bank for closure 
+         => no => person 2 & repeat
+
+7. Promises : http requests 
+
+
+
+
+
+
